@@ -1,7 +1,6 @@
-#Context Compression for AI Agents (Graph Memory Module)
-
-A graph-based context compression system for large language models and AI agents. Conversational context is represented as a dynamic knowledge graph where entities become nodes and relationships become edges. An NLP extractor identifies entities and relations, the graph updates incrementally with merged nodes and weighted edges, and relevant subgraphs are retrieved and linearized as compressed context. Achieves 80–90% compression ratio with demonstrated real-time ratios of 4x–21x across multi-turn sessions, while preserving relational structure critical for multi-hop reasoning.
-What you get:
+###Context Compression for AI Agents (Graph Memory Module)
+This repo contains a small, runnable reference implementation of a graph-based memory + context compression module for chat agents.
+###What you get:
 
 A KnowledgeGraph that stores entities (constraints, cities, events, expenses) and edges between them.
 An extractor that runs on every user turn (regex-based) to upsert entities and handle invalidation triggers.
@@ -42,5 +41,9 @@ graph_memory/metrics.py — token estimate + compression ratio
 graph_memory/memory.py — orchestration (ingest turn, update graph, build contexts)
 scripts/chat_cli.py — runnable chatbot interface (rule-based assistant for demo)
 scripts/eval_demo.py — quantitative demo report using data/demo_conversation.json
+
+Notes
+
 This is intentionally dependency-light (stdlib-only) so it runs anywhere.
 Token counting is an estimate (whitespace/punctuation based). You can plug in a real tokenizer later.
+ShareContentproject (2).zipzip
