@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Context Compression for AI Agents (Graph Memory Module)
 
 This repo contains a small, runnable reference implementation of a **graph-based memory + context compression module** for chat agents.
@@ -82,3 +83,6 @@ python3 -m scripts.validation_suite
 
 - This is intentionally dependency-light (stdlib-only) so it runs anywhere.
 - Token counting is an **estimate** (whitespace/punctuation based). You can plug in a real tokenizer later.
+=======
+
+>>>>>>> 21480ef10792c11193689a31775ee6b8baf13efa
